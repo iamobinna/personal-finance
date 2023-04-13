@@ -222,6 +222,13 @@ main {
   width: 96%;
   margin: 1rem auto 4rem;
 }
+main.sean {
+  display: grid;
+  grid-template-columns: 16rem auto;
+  gap: 2rem;
+  width: 96%;
+  margin: 1rem auto 4rem;
+}
 /* main section{
     background: black;
 } */
@@ -534,9 +541,22 @@ main .recent-transactions .card-details .card {
   justify-content: center;
   border-radius: var(--border-radius-2);
 }
+.settings-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
 
 /* ======  MEDIA QUERIES ====== */
 @media screen and (max-width: 1024px) {
+  .settings-img {
+    width: 100px;
+    height: 100px;
+  }
+  main.sean {
+    grid-template-columns: 1fr;
+  }
   nav .search-bar {
     display: none;
   }
