@@ -44,7 +44,7 @@
         </div>
       </div>
     </nav>
-    <main>
+    <main class="sean">
       <aside>
         <button id="close-btn">
           <span class="material-icons-sharp">close</span>
@@ -55,7 +55,7 @@
             <span class="material-icons-sharp">dashboard</span>
             <h4>Dashboard</h4>
           </a>
-          <a href="/exchange.html"  >
+          <a href="/exchange.html">
             <span class="material-icons-sharp">currency_exchange</span>
             <h4>Exchange</h4>
           </a>
@@ -68,7 +68,7 @@
             <h4>Transactions</h4>
           </a>
           <a href="/analytics.html" class="active">
-            <span class="material-icons-sharp" >pie_chart</span>
+            <span class="material-icons-sharp">pie_chart</span>
             <h4>Analytics</h4>
           </a>
           <a href="/messages.html">
@@ -93,6 +93,78 @@
           <a href="#">Update Now</a>
         </div>
       </aside>
+      <canvas id="chart"></canvas>
     </main>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"
+    integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    const chart = document.querySelector("#chart").getContext("2d");
+
+    // Create a new chart instance
+    new Chart(chart, {
+      type: "bar",
+      data: {
+        labels: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+        ],
+
+        datasets: [
+          {
+            label: "Investment",
+            data: [
+              29374, 33537, 49631, 59095, 59095, 36684, 33572, 39974, 48847,
+              48116, 61004,
+            ],
+            borderColor: "red",
+            borderWidth: 2,
+          },
+          {
+            label: "Expenses",
+            data: [
+              31500, 41000, 88800, 26000, 46000, 32698, 5000, 3000, 18656,
+              24832, 36844,
+            ],
+            borderColor: "blue",
+            borderWidth: 2,
+          },
+          {
+            label: "Money In",
+            data: [
+              31500, 33537, 88800, 26000, 46000, 32698, 5000, 3000, 18656,
+              24832, 36844,
+            ],
+            backgroundColor: [
+              "rgba(255, 99, 132, 0.2)",
+              "rgba(255, 159, 64, 0.2)",
+              "rgba(255, 205, 86, 0.2)",
+              "rgba(75, 192, 192, 0.2)",
+              "rgba(54, 162, 235, 0.2)",
+              "rgba(153, 102, 255, 0.2)",
+              "rgba(201, 203, 207, 0.2)",
+            ],
+            borderColor: "green",
+            borderWidth: 2,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+      },
+    });
+  </script>
 </html>
