@@ -371,8 +371,8 @@ main aside .updates a:hover {
   display: flex;
   gap: 2rem;
 }
-.material-icons-sharp{
-    font-size: 34px;
+.material-icons-sharp {
+  font-size: 34px;
 }
 
 @media screen and (max-width: 1024px) {
