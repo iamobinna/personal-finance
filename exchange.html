@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./extra.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <nav>
@@ -101,100 +101,69 @@
       </aside>
       <div class="container">
         <div class="row">
-          <div class="col-md-5 col-sm-12">
-            <div class="card">
-              <div class="top">
-                <div class="left">
-                  <img src="./assets/img/BTC.png" />
-                  <h2>
-                    <select class="bg-transparent">
-                      <option value="#">BTC</option>
-                      <option value="#">ETH</option>
-                      <option value="#">BNB</option>
-                    </select>
-                  </h2>
-                </div>
-                <img src="./assets/img/visa.png" class="right" />
-              </div>
-              <div class="middle">
-                <h1>$827,199</h1>
-                <input
-                  type="number"
-                  placeholder="Enter Amount To Transfer"
-                  class="w-full ps-3 bg-transparent border-bottom text-white"
-                />
-                <img src="./assets/img/card chip.png" class="chip" />
-              </div>
-              <div class="bottom">
-                <div class="left">
-                  <small>Card Holder</small>
-                  <h5>John Doe</h5>
-                </div>
-                <div class="right">
-                  <div class="expiry">
-                    <small>Expiry</small>
-                    <h5>08/23</h5>
-                  </div>
-                  <div class="cvv">
-                    <small>CVV</small>
-                    <h5>123</h5>
-                  </div>
-                </div>
-              </div>
+          <div class="col-12 bg-warning-subtle p-3 p-lg-5 rounded-2">
+            <h3 class="text-uppercase fs-2 mb-5">send</h3>
+            <div class="d-flex align-items-center justify-content-between">
+              <input
+                type="number"
+                placeholder="Enter Amount To Change"
+                class="w-full px-2 py-3 input bg-transparent border-bottom border-black text-black fs-4"
+              />
+              <select
+                class="inputs p-3 text-uppercase text-black bg-transparent border-bottom border-black"
+              >
+                <option>BTC</option>
+                <option>ETH</option>
+                <option>BNB</option>
+                <option>TRON</option>
+              </select>
             </div>
           </div>
           <div
-            class="col-md-2 col-sm-12 d-flex justify-content-center align-content-center"
+            class="col-12 d-flex align-items-center justify-content-center py-3"
           >
-            <span class="material-icons-sharp"> swap_horiz </span>
+            <span class="material-icons-sharp"> swap_vert </span>
           </div>
-          <div class="col-md-5 col-sm-12">
-            <div class="card two">
-              <div class="top">
-                <div class="left">
-                  <img src="./assets/img/ETH.png" />
-                  <h2>
-                    <select class="bg-transparent">
-                      <option value="#">ETH</option>
-                      <option value="#">BNB</option>
-                      <option value="#">BTC</option>
-                    </select>
-                  </h2>
-                </div>
-                <img src="./assets/img/visa.png" class="right" />
-              </div>
-              <div class="middle">
-                <h1>$827,199</h1>
-                <input
-                  type="number"
-                  class="w-full ps-3 bg-transparent border-bottom text-white"
-                />
-                <img src="./assets/img/card chip.png" class="chip" />
-              </div>
-              <div class="bottom">
-                <div class="left">
-                  <small>Card Holder</small>
-                  <h5>John Doe</h5>
-                </div>
-                <div class="right">
-                  <div class="expiry">
-                    <small>Expiry</small>
-                    <h5>08/23</h5>
-                  </div>
-                  <div class="cvv">
-                    <small>CVV</small>
-                    <h5>123</h5>
-                  </div>
-                </div>
-              </div>
+          <div class="col-12 bg-success-subtle p-3 p-lg-5 rounded-2">
+            <h3 class="text-uppercase fs-2 mb-5">recieve</h3>
+            <div class="d-flex align-items-center justify-content-between">
+              <input
+                type="number"
+                placeholder="Enter Amount To Change"
+                class="w-full px-2 py-3 input bg-transparent border-bottom border-black text-black fs-4"
+              />
+              <select
+                class="inputs p-3 text-uppercase text-black bg-transparent border-bottom border-black"
+              >
+                <option>ETH</option>
+                <option>BTC</option>
+                <option>BNB</option>
+                <option>TRON</option>
+              </select>
             </div>
           </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-3 col-sm-12">
-            <div class="d-flex justify-content-between align-content-center bg-dark-subtle p-5 rounded-3">
-              <h5 class="text-uppercase text-black">exchange fees</h5>
-              <p class="text-black">$40</p>
+          <div
+            class="col-12 col-md-5 me-4 d-flex align-items-center justify-content-between p-4 shadow mt-5 rounded-2"
+          >
+            <h2 class="mb-0">Available portfolio</h2>
+            <div class="d-flex align-items-center gap-3">
+              <div class="bg-warning-subtle p-3 rounded-4">
+                <img
+                  src="/assets/img/BTC.png"
+                  alt="#"
+                  class="img-fluid"
+                  style="width: 20px"
+                />
+              </div>
+              <p class="mb-0 text-uppercase fs-3">2,400</p>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-between p-4 shadow mt-5 rounded-2"
+          >
+            <h2>Exchange Fees</h2>
+            <div class="d-flex align-items-center gap-3">
+              <p class="mb-0 text-uppercase fs-3">$20</p>
             </div>
           </div>
         </div>
